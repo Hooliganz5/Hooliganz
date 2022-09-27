@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif
+}
+.logo41{
+    width: 120px;
+    cursor: pointer;
+}
+.banner41{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(img/banner211.png);
+    background-size: cover;
+    background-position: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.box{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    background-color: black;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent, #ff0062);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent, #ff00ff);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.box{
+    right: 40%;
+}
+.buy{
+    list-style: none;
+    display: inline-block;
+    margin: 0% 15px;
+    position: relative;
+}
+.buy ul li a{
+    text-decoration: none;
+    color: rgb(230, 222, 230);
+    text-transform: uppercase;
+    border: 2px solid;
+    border-top: 10%;
+}
+.buy{
+    left: 40%;
+    top: 60%;
+}
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: black;
+    z-index: 1;
+}

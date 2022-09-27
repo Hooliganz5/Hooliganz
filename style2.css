@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+.banner21{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(img/banner211.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar21{
+    width: 95%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .logo21{
+        width: 110px;
+        cursor: pointer;
+    }
+    .navbar21 ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0% 15px;
+        position: relative;
+    }
+    .navbar21 ul li a{
+        text-decoration: none;
+        color: rgb(93, 3, 116);
+        text-transform: uppercase;
+    }
+    .navbar21 ul li::after{
+        content: '';
+        height: 4px;
+        width: 0px;
+        background: #83038f;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        }
+        .navbar21 ul li:hover::after{
+            width: 100%;
+        }
